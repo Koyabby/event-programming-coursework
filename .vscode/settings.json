@@ -1,0 +1,29 @@
+{
+  "java.project.sourcePaths": [
+    "Week1_EDP",
+    "Week1_EDP/procedural",
+    "Week1_EDP/eventdriven",
+    "Week1_EDP/eventdriven/BugFixChallenge",
+    "week02-observer-pattern/activity1-weather-station",
+    "week02-observer-pattern/activity2-legacy-observer",
+    "week02-observer-pattern/activity3-custom-observer",
+    "week02-observer-pattern/activity4-comparison",
+    "week03-swing-gui/activity1-first-window",
+    "week03-swing-gui/activity2-basic-components",
+    "week03-swing-gui/activity3-layout-managers",
+    "week03-swing-gui/activity4-edt-rule",
+    "week03-swing-gui/activity5-complete-mockup",
+    "week04-event-handling/activity1-actionlistener-basics",
+    "week04-event-handling/activity2-listener-techniques",
+    "week04-event-handling/activity3-item-and-document-listeners",
+    "week04-event-handling/activity4-counter-app",
+    "week04-event-handling/activity5-interactive-form",
+    "week04-event-handling/activity6-complete-app",
+    "week04-event-handling/activity7-mouse-and-key",
+    "week05-advanced-swing/activity1-jlist-renderer",
+    "week05-advanced-swing/activity2-jtable",
+    "week05-advanced-swing/activity3-jtree-tabs",
+    "week05-advanced-swing/activity4-menus-dialogs",
+    "week05-advanced-swing/activity5-capstone-file-manager"
+  ]
+}

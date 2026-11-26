@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.AbstractAction;
+import javax.swing.KeyStroke;
 import java.awt.*;
 
 public class CounterApp {
@@ -86,6 +88,37 @@ resetButton.addActionListener(e -> {
 count = 0;
 updateDisplay();
 statusLabel.setText("Counter reset");
+});
+
+// Keyboard shortcuts (Step 4.3)
+frame.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
+.put(KeyStroke.getKeyStroke("UP"), "increment");
+frame.getRootPane().getActionMap()
+.put("increment", new AbstractAction() {
+@Override
+public void actionPerformed(java.awt.event.ActionEvent e) {
+incrementButton.doClick();
+}
+});
+
+frame.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
+.put(KeyStroke.getKeyStroke("DOWN"), "decrement");
+frame.getRootPane().getActionMap()
+.put("decrement", new AbstractAction() {
+@Override
+public void actionPerformed(java.awt.event.ActionEvent e) {
+decrementButton.doClick();
+}
+});
+
+frame.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW)
+.put(KeyStroke.getKeyStroke("R"), "reset");
+frame.getRootPane().getActionMap()
+.put("reset", new AbstractAction() {
+@Override
+public void actionPerformed(java.awt.event.ActionEvent e) {
+resetButton.doClick();
+}
 });
 
 frame.setVisible(true);

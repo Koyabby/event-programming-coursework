@@ -45,6 +45,27 @@ table.getTableHeader().setFont(new Font("Arial", Font.BOLD, 14));
 
 table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 
+// Custom renderer for the GPA column (index 4)
+table.getColumnModel().getColumn(4).setCellRenderer(
+new javax.swing.table.DefaultTableCellRenderer() {
+@Override
+public Component getTableCellRendererComponent(
+JTable tbl, Object value, boolean isSelected,
+boolean hasFocus, int row, int column) {
+Component c = super.getTableCellRendererComponent(
+tbl, value, isSelected, hasFocus, row, column);
+if (!isSelected && value instanceof Double) {
+double gpa = (Double) value;
+if (gpa < 3.0) {
+c.setForeground(Color.RED);
+} else {
+c.setForeground(Color.BLACK);
+}
+}
+return c;
+}
+});
+
 // ---- Buttons panel ----
 JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 10));
 

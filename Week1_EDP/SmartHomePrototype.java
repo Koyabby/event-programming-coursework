@@ -1,4 +1,3 @@
-package Week1_EDP;
 import javax.swing.*;
 import java.awt.*;
 import java.util.Date;
