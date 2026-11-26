@@ -26,4 +26,8 @@ hs_err_pid*
 /week06-javafx/target/
 /week07-javafx-events/target/
 /week08-javafx-bindings/target/
+/week10-university-system/target/
 replay_pid*
+
+# Local database credentials
+database.properties
